@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  /* background-color: #222; */
-  background-image: url(images/games.jpg);
+  background-color: #222;
+  /* background-image: url(images/games.jpg); */
   overflow: hidden;
   height: 100%;
   background-size: cover;

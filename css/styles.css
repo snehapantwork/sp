@@ -36,7 +36,7 @@ outline: 1px solid black;
 } */
 
 a:hover {
-  background: #52796f;
+  background: rgb(187, 240, 107);
   text-decoration: none;
 }
 
@@ -71,12 +71,15 @@ h3 {
   padding: 20px 0;
 }
 
-.item-details h3 + p {
+/* .item-details h3 + p {
+  font-style: italic;
+} */
+.work-headline {
   font-style: italic;
 }
-
 .item-details h3 ~ p {
   margin: 0;
+  display: flex;
 }
 
 .divider > section {
@@ -86,6 +89,10 @@ h3 {
 
 .divider > section:last-of-type {
   border-bottom: none;
+}
+.intro {
+  text-align: justify;
+  text-justify: auto;
 }
 
 /*Profile
@@ -154,6 +161,7 @@ header {
   /* color: white; */
   background-size: cover;
   background-position: top right;
+
   /* padding-bottom: 20px;  */
 }
 
@@ -212,8 +220,17 @@ footer a {
 
   .job-item {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
+  .work-item {
+    display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
+    grid-column-gap: 20px;
+    text-align: justify;
+    text-justify: auto;
+
+    /* justify-content: center; */
   }
   .contact-list {
     display: flex;
