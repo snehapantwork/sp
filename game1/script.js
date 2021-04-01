@@ -40,7 +40,12 @@ document.querySelector(".check").addEventListener("click", function () {
     //display secret number
     document.querySelector(".number").textContent = secretNumber;
     //change background color
-    document.querySelector("body").style.backgroundColor = "#60b347";
+    document.querySelector(".message").style.backgroundColor = "white";
+    //change text color
+    document.querySelector(".message").style.color = "black";
+    //change background image
+    document.querySelector("body").style.backgroundImage =
+      "url(images/win.jpg)";
     //change width of box
     document.querySelector(".number").style.width = "30rem";
     //check high score
@@ -100,9 +105,11 @@ document.querySelector(".check").addEventListener("click", function () {
 document.querySelector(".again").addEventListener("click", function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
-  //   document.querySelector(".message").textContent = "Start guessing.... ";
-  displayMessage("Start guessing.... ");
-  document.querySelector("body").style.backgroundColor = "#222";
+  document.querySelector(".message").textContent = "Start guessing.... ";
+  // displayMessage("Start guessing.... ");
+  document.querySelector("body").style.backgroundImage = "url(images/a2.png)";
+  document.querySelector(".message").style.backgroundColor = "black";
+  document.querySelector(".message").style.color = "white";
   document.querySelector(".number").style.width = "15rem";
   document.querySelector(".score").textContent = score;
   document.querySelector(".number").textContent = "?";
