@@ -1,5 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"); */
-@import url("../fonts/AquireBold-8Ma60.otf") * {
+
+@import url("../fonts/AquireBold-8Ma60.otf");
+* {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
