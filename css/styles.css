@@ -64,6 +64,7 @@ h2 {
 
 h3 {
   margin: 10px 0 0 0;
+  font-size: 20px;
 }
 
 .content-wrap {
@@ -156,13 +157,15 @@ header {
 ---------------------------------*/
 .skills {
   /* background-color: #99c1de; */
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  background: linear-gradient(to top left, #79b6a2, #7dd56f);
   /* background-image: url(../images/white.jpg);
   /* color: white; */
   background-size: cover;
   background-position: top right;
+
   /* padding-bottom: 20px;  */
 }
+
 /*Work Experience
 ---------------------------------*/
 .work-experience {
@@ -244,6 +247,7 @@ footer a {
     grid-column-gap: 40px;
     text-align: justify;
     text-justify: auto;
+    /* font-size: 10px; */
 
     /* justify-content: center; */
   }
