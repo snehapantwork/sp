@@ -18,22 +18,27 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  /* background: linear-gradient(to top left, #28b487, #7dd56f); */
 }
 
-.show-modal {
-  font-size: 2rem;
+.show-modal1,
+.show-modal2,
+.show-modal3 {
+  font-size: 1.75rem;
   font-weight: 600;
   padding: 1.75rem 3.5rem;
   margin: 5rem 2rem;
   border: none;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: linear-gradient(to top left, #28b487, #7dd56f);
   color: #444;
   border-radius: 10rem;
   cursor: pointer;
 }
 
-.close-modal {
+.close-modal1,
+.close-modal2,
+.close-modal3 {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
@@ -59,7 +64,9 @@ p {
   display: none;
 }
 
-.modal {
+.modal1,
+.modal2,
+.modal3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,7 +79,14 @@ p {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
-
+.pspo,
+.psm,
+.prince2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
 .overlay {
   position: absolute;
   top: 0;

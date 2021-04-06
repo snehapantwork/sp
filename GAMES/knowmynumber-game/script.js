@@ -64,10 +64,12 @@ document.querySelector(".check").addEventListener("click", function () {
       displayMessage(
         (document.querySelector(".message").textContent =
           guess > secretNumber
-            ? "📈 It's Higher than the correct number. "
-            : "📉 It's Lower than the correct number.")
+            ? "📈 Your guess is higher than the correct no. "
+            : "📉 Your guess is lower than the correct no.")
       );
       score--;
+      document.querySelector(".message").style.backgroundColor = "white";
+      document.querySelector(".message").style.color = "red";
       document.querySelector(".score").textContent = score;
     } else {
       document.querySelector(".message").textContent = "You lost the game "; //
@@ -107,7 +109,8 @@ document.querySelector(".again").addEventListener("click", function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   document.querySelector(".message").textContent = "Start guessing.... ";
   // displayMessage("Start guessing.... ");
-  document.querySelector("body").style.backgroundImage = "url(images/a2.png)";
+  document.querySelector("body").style.backgroundImage =
+    "url(images/transBackdrop3.png)";
   document.querySelector(".message").style.backgroundColor = "black";
   document.querySelector(".message").style.color = "white";
   document.querySelector(".number").style.width = "15rem";

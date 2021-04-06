@@ -11,54 +11,65 @@
       rel="stylesheet"/>
 
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- <link rel="stylesheet" href="modal/style.css" /> -->
-    
-
+    <link rel="stylesheet" href="modal/styles.css" />
   </head>
   <body>
  
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
-        <div class="content-wrap">
-          <h1>Sneha Pant</h1>
+        <div class="content-wrap ">
+          <!-- <img src="images/IMG_9601-01.png"> -->
+            <h1>Sneha Pant</h1>     
           <!-- <h2>Project Manager</h2> -->
-          <section class="intro">
-            <p>
+        
+            <p class="intro">
               Innovative Front End Developer building and maintaining responsive
               websites and games. Proficient in HTML, CSS, jQuery, JavaScript
               and React; plus modern libraries and frameworks. Passionate about
               usability and possess Diploma in Graphic designing, good knowledge
               of Adobe Creative Suite and other design tools. Good understanding
-              of SEO and Web Accessibility and applied the same in my work.
+              of SEO and Web Accessibility and applied the same in my work.           
             </p>
-            <p>
-              I'm also a certified Professional Scrum Master (PSM 1),
-              Professional scrum product owner (PSPO 1) and PRINCE 2 foundation
-              practioner. Good understanding of Agile development processes and
+            <p class="intro">
+              I'm also a certified Professional Scrum Master (PSM1),
+              Professional scrum Product Owner (PSPO1) and PRINCE2 practioner. Good understanding of Agile development processes and
               project management practices, with hands on experience of nearly
               6 years in project and team management.
-            </p>
-          </section>
+            </p>          
         </div>
       </header>
 
         <!-- ********************  TESTING MODAL ********************* -->
-      <!-- <button class="show-modal">Certified Scrum Master PSM1</button>
-      <button class="show-modal">Certified Product Owner PSPO1</button>
-      <button class="show-modal">Certified PRINCE2 Foundation</button>
+<section>
+      <button class="show-modal1">Certified Scrum Master PSM1</button>
+      <button class="show-modal2">Certified Product Owner PSPO1</button>
+      <button class="show-modal3">Certified PRINCE2 Foundation</button>
   
-      <div class="modal hidden">
-        <button class="close-modal">&times;</button>
+      <div class="modal1 hidden">
+        <button class="close-modal1">&times;</button>
         <!-- <h1>I'm a modal window 😍</h1> -->
-        <!-- <img src="images/psmi.png" alt="blog image" />
-        
+        <img class="psm" src="images/psmi.png" alt="psm image" />
+        <p>The Scrum Master is accountable for establishing Scrum as defined in the Scrum Guide. They do this by helping everyone understand Scrum theory and practice, both within the Scrum Team and the organization.</p>
       </div>
-      <div class="overlay hidden"></div> --> -->
-  
+
+      <div class="modal2 hidden">
+        <button class="close-modal2">&times;</button>
+        <!-- <h1>I'm a modal window 😍</h1> -->
+        <img class="pspo" src="images/pspoi.png" alt="pspo image"/>  
+        <p>The Product Owner (PO) is a member of the Agile Team responsible for defining Stories and prioritizing the Team Backlog to streamline the execution of program priorities while maintaining the conceptual and technical integrity of the Features or components for the team.</p>
+      </div>
+      <div class="modal3 hidden">
+        <button class="close-modal3">&times;</button>
+        <!-- <h1>I'm a modal window 😍</h1> -->
+        <img class="prince2" src="images/prince2.jpg" alt="prince2 image" />  
+        <p>PRINCE2 is a project management method widely adopted around the world, used by people and organizations from wide-ranging industries and sectors. It is a flexible method that guides you through the essentials for managing successful projects, regardless of type or scale.</p>
+      </div>
+      <div class="overlay hidden"></div> 
+    </section>
     
       <!-- ********************  PICTURES ********************* -->
-      <section class="pictures">
+      <!-- <section class="pictures">
         <div class="content-wrap">
           <section class="project-item">
             <h3>Certified Scrum Master PSM1</h3>
@@ -73,7 +84,7 @@
             <img src="images/prince2.jpg" alt="blog image" />
           </section>
         </div>
-      </section>
+      </section> -->
       <!-- ********************  CAREER SUMMARY ********************* -->
 
       <!-- <section>
@@ -131,10 +142,10 @@
             <div class="proj-skills">
               <h3>Learning Projects</h3>
               <p>
-                <a href="game1/index.html" target="_blank"
-                  >GAME using JavaScript</a
-                >
+                <a href="GAMES/knowmynumber-game/" target="_blank"
+                  >GUESS MY NUMBER GAME </a><img src="GAMES/knowmynumber-game/images/guessimage.jpg" alt="Know my game image" class="gameimage">
               </p>
+              <p><a href="GAMES/pig-game/" target="_blank">PIG GAME </a><img src="GAMES/pig-game/pig1.png" alt="Pig game image" class="gameimage"></p>
             </div>
           </section>
         </div>
@@ -146,17 +157,20 @@
           <!--  <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>-->
 
           <!-- Copy this whole <section> block to add more jobs. -->
-          <section class="job-item">
+          <section class="work-item">
             <div class="job-details">
               
               <h3>Project Manager</h3>
               <p>RN24, Crawley (UK)</p>
               <a href="https://www.rn24.co.uk/" target="_blank"> https://www.rn24.co.uk/</a>
               <p>Dec 2019 to Dec 2020</p>
+              <section class="work-headline"> 
+                <p>1 year of  project management experience in a leading health care staffing agency.</p>
+              </section>
             </div>
 
              <div class="job-summary">
-              <p>1 year of  project management experience in a leading health care staffing agency.</p>
+             
               <p><h3>Key Responsibilities</h3>
               <ul>
                 <li>Acted as liaison between business, sales and IT teams to make company’s website and incorporate
@@ -492,7 +506,7 @@
 
           <section class="project-item">
             <a href="Inspiration/inspire.html" target="_blank"
-              ><img src="images/unfinished.jpg" alt="description of image" />
+              ><img src="images/unfinished.jpg" alt="Priyanka chopra image" />
               <h3>Inspiration</h3>
               <p>People who inspires me</p>
             </a>
