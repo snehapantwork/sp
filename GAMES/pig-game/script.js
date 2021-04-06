@@ -10,6 +10,7 @@ const current1El = document.getElementById("current--1");
 
 const diceEl = document.querySelector(".dice");
 const pigImg = document.querySelector(".pig");
+const rules = document.querySelector(".rules");
 const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
@@ -27,6 +28,7 @@ const init = function () {
   score1El.textContent = 0;
   current0El.textContent = 0;
   current1El.textContent = 0;
+  rules.classList.remove("hidden");
   pigImg.classList.remove("hidden");
   diceEl.classList.add("hidden");
   player0El.classList.remove("player--winner");
@@ -54,6 +56,7 @@ btnRoll.addEventListener("click", function () {
     //2. display the dice
     diceEl.classList.remove("hidden");
     pigImg.classList.add("hidden");
+    rules.classList.add("hidden");
     diceEl.src = `dice-${dice}.png`;
     //3. check for a rolled 1 and if true switch to next player
     if (dice !== 1) {
